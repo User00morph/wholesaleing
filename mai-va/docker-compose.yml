@@ -1,0 +1,11 @@
+services:
+  mai-va:
+    build: .
+    container_name: mai-va
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    command: npm run dev
