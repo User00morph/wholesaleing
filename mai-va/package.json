@@ -1,0 +1,28 @@
+{
+  "name": "mai-va",
+  "version": "0.1.0",
+  "description": "M.A.I–VA (Market Acquisition Intelligence – Virtual Assistant) for real estate wholesaling",
+  "main": "dist/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "worker": "tsx scripts/worker.ts",
+    "daily-brief": "tsx scripts/dailyBrief.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
